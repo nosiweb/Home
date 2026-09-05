@@ -60,57 +60,79 @@
         </nav>
     </div>
     <!--header section end -->
-    <!-- contact section start -->
-<!-- Contact Information Section -->
-<section class="contact-section" id="contact">
+<!-- contact section start -->
+
+<section class="contact_section layout_padding">
   <div class="container">
-    
-    <div class="contact-title">
+
+    <!-- Section Heading -->
+    <div class="contact_heading text-center">
       <h2>Get in Touch</h2>
       <p>Have a question, idea, or project? Feel free to contact me.</p>
     </div>
 
-    <div class="contact-info">
+    <div class="row align-items-stretch">
 
-      <!-- GitHub -->
-      <div class="contact-item">
-        <div class="contact-icon">⌘</div>
-        <div>
-          <h4>GitHub</h4>
-          <a href="https://github.com/YOUR-GITHUB" target="_blank">
-            Visit my GitHub
-          </a>
+      <!-- Contact Information -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="contact_box">
+
+          <h3>Contact Information</h3>
+
+          <!-- GitHub -->
+          <div class="contact_item">
+            <div class="contact_icon">⌘</div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/YOUR-GITHUB" target="_blank">
+                Visit my GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Website -->
+          <div class="contact_item">
+            <div class="contact_icon">🌐</div>
+            <div>
+              <h4>Website</h4>
+              <a href="https://nosiweb.github.io/Home/" target="_blank">
+                Visit my website
+              </a>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="contact_item">
+            <div class="contact_icon">✉</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:nosibul6294@gmail.com?subject=Website%20Enquiry">
+                nosibul6294@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="contact_item">
+            <div class="contact_icon">⌖</div>
+            <div>
+              <h4>Location</h4>
+              <p>West Bengal, India</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Website -->
-      <div class="contact-item">
-        <div class="contact-icon">🌐</div>
-        <div>
-          <h4>Website</h4>
-          <a href="https://nosiweb.github.io/Home/" target="_blank">
-            Visit my website
-          </a>
-        </div>
-      </div>
 
-      <!-- Email -->
-      <div class="contact-item">
-        <div class="contact-icon">✉</div>
-        <div>
-          <h4>Email</h4>
-          <a href="mailto:nosibul6294@gmail.com?subject=Website%20Enquiry">
-            nosibul6294@gmail.com
-          </a>
-        </div>
-      </div>
-
-      <!-- Address -->
-      <div class="contact-item">
-        <div class="contact-icon">⌖</div>
-        <div>
-          <h4>Location</h4>
-          <p>West Bengal, India</p>
+      <!-- Map -->
+      <div class="col-md-6">
+        <div class="contact_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235850.81210225905!2d88.18255139082305!3d22.535343450315676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1788579758461!5m2!1sen!2sin"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
 
@@ -118,140 +140,259 @@
   </div>
 </section>
 
+
+<!-- Contact Section CSS -->
 <style>
-.contact-section {
-  padding: 70px 20px;
-  background: #111;
-  color: #fff;
+
+.contact_section {
+  padding: 70px 0;
+  background: #ffffff;
 }
 
-.contact-title {
-  text-align: center;
+.contact_heading {
   margin-bottom: 45px;
 }
 
-.contact-title h2 {
-  font-size: 36px;
+.contact_heading h2 {
+  font-size: 38px;
   font-weight: 700;
+  color: #252525;
   margin-bottom: 10px;
 }
 
-.contact-title p {
-  color: #bbb;
+.contact_heading p {
+  color: #777;
   font-size: 16px;
+  margin: 0;
 }
 
-.contact-info {
-  max-width: 850px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+
+/* Contact Box */
+
+.contact_box {
+  height: 100%;
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
 }
 
-.contact-item {
+.contact_box h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #252525;
+  margin-bottom: 28px;
+}
+
+
+/* Contact Items */
+
+.contact_item {
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding: 22px;
-  border: 1px solid #333;
-  border-radius: 12px;
-  background: #181818;
-  transition: 0.3s;
+  gap: 15px;
+  padding: 17px 0;
+  border-bottom: 1px solid #eeeeee;
 }
 
-.contact-item:hover {
-  border-color: #ff8a00;
-  transform: translateY(-3px);
+.contact_item:last-child {
+  border-bottom: none;
 }
 
-.contact-icon {
-  width: 48px;
-  height: 48px;
+.contact_icon {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   border-radius: 50%;
-  background: linear-gradient(135deg, #087cff, #ff8a00);
-  color: #fff;
-  font-size: 22px;
-  flex-shrink: 0;
+
+  background: #f5f5f5;
+  color: #f5a623;
+
+  font-size: 20px;
 }
 
-.contact-item h4 {
-  margin: 0 0 5px;
-  font-size: 18px;
+.contact_item h4 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
 }
 
-.contact-item p {
-  margin: 0;
-  color: #bbb;
-}
-
-.contact-item a {
-  color: #ff9b2f;
+.contact_item a {
+  color: #f5a623;
   text-decoration: none;
+  font-size: 15px;
 }
 
-.contact-item a:hover {
+.contact_item a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .contact-info {
-    grid-template-columns: 1fr;
+.contact_item p {
+  margin: 0;
+  color: #777;
+  font-size: 15px;
+}
+
+
+/* Map */
+
+.contact_map {
+  height: 100%;
+  min-height: 430px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.contact_map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  border: 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+  .contact_section {
+    padding: 50px 15px;
   }
 
-  .contact-title h2 {
+  .contact_heading h2 {
     font-size: 30px;
   }
+
+  .contact_box {
+    padding: 25px;
+  }
+
+  .contact_map,
+  .contact_map iframe {
+    min-height: 350px;
+  }
+
 }
+
 </style>
-            <div class="col-md-6 padding_0">
-              <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235850.81210225905!2d88.18255139082305!3d22.535343450315676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1788579758461!5m2!1sen!2sin" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-              </div>
-            </div>
-          </div>
+
+
+<!-- contact section end -->
+
+
+<!-- footer section start -->
+
+<div class="footer_section layout_padding margin_top_90">
+
+  <div class="container">
+
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-lg-3 col-sm-6">
+
+        <h4 class="about_text">About Financial</h4>
+
+        <div class="location_text">
+          <img src="images/map-icon.png">
+          <span class="padding_left_15">West Bengal, India</span>
         </div>
+
+        <div class="location_text">
+          <img src="images/call-icon.png">
+          <span class="padding_left_15">Available soon</span>
+        </div>
+
+        <div class="location_text">
+          <img src="images/mail-icon.png">
+          <span class="padding_left_15">
+            nosibul6294@gmail.com
+          </span>
+        </div>
+
       </div>
-    </div>
-    <!-- contact section end -->
-    <!--footer section start -->
-    <div class="footer_section layout_padding margin_top_90">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <h4 class="about_text">About Financial</h4>
-            <div class="location_text"><img src="images/map-icon.png"><span class="padding_left_15">West Bengal, India</span></div>
-            <div class="location_text"><img src="images/call-icon.png"><span class="padding_left_15">Available soon</span></div>
-            <div class="location_text"><img src="images/mail-icon.png"><span class="padding_left_15">mosibul6294@gmail.com</span></div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <h4 class="about_text">About Financial</h4>
-            <p class="dolor_text">As an Indian resident and student, I provide these services to help manage my personal expenses and support my studies while building practical experience through my work.</p>
-          </div>
-          
-            
-          <div class="col-lg-3 col-sm-6">
-            
-              <ul>
-                <li><a href="#"><img src="images/fb-icon1.png"></a></li>
-                 <li><a href="#"><img src="images/twitter-icon1.png"></a></li>
-                <li><a href="#"><img src="images/linkedin-icon1.png"></a></li>
-                <li><a href="#"><img src="images/youtub-icon1.png"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- copyright section start -->
-        <div class="copyright_section">
-          <div class="copyright_text">Copyright 2026 All Right Reserved By <a href="https://html.design">NosiWeb</a></div>
-        </div>
-        <!-- copyright section end -->
+
+
+      <!-- Financial Note -->
+      <div class="col-lg-3 col-sm-6">
+
+        <h4 class="about_text">About Financial</h4>
+
+        <p class="dolor_text">
+          As an Indian resident and student, I provide these services
+          to help manage my personal expenses and support my studies
+          while building practical experience through my work.
+        </p>
+
       </div>
+
+
+      <!-- Social Links -->
+      <div class="col-lg-3 col-sm-6">
+
+        <h4 class="about_text">Connect With Me</h4>
+
+        <ul>
+
+          <li>
+            <a href="#">
+              <img src="images/fb-icon1.png">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="images/twitter-icon1.png">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="images/linkedin-icon1.png">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="images/youtub-icon1.png">
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
     </div>
-    <!--footer section end -->
+
+  </div>
+
+
+  <!-- Copyright -->
+
+  <div class="copyright_section">
+
+    <div class="copyright_text">
+      Copyright 2026 All Right Reserved By
+      <a href="https://nosiweb.github.io/Home/">
+        NosiWeb
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- footer section end -->
+  
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
