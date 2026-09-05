@@ -90,18 +90,26 @@
       </div>
     <!--services section end -->
 
-      <!-- =========================================================
-     PRICING & PLANS SECTION
+
+      
+      
+<!-- =========================================================
+     PRICING SECTION
 ========================================================= -->
 
 <section class="pricing_section layout_padding" id="plans">
 
   <div class="container">
 
-    <h1 class="pricing_title">Simple Plans. Simple Pricing.</h1>
+    <h1 class="pricing_title">OUR PLANS</h1>
 
     <p class="pricing_text">
-      Professional websites without the professional-sized price tag.
+      Affordable websites with simple monthly plans.
+    </p>
+
+    <p class="pricing_comparison">
+      Simple pricing you can understand at a glance —
+      <strong>🍔 Basic, 🍕 Pro, and ☕ Updates.</strong>
     </p>
 
 
@@ -112,12 +120,14 @@
       <div class="offer_icon">🎁</div>
 
       <div>
-        <h3>First Month FREE</h3>
+
+        <h3>First Month FREE!</h3>
 
         <p>
           New customers can get their website built and published
           with <strong>no payment for the first month.</strong>
         </p>
+
       </div>
 
     </div>
@@ -132,7 +142,7 @@
         <span class="food_icon">🍔</span>
 
         <div>
-          <strong>Basic / month</strong>
+          <strong>Basic / Month</strong>
           <small>About the price of a burger</small>
         </div>
 
@@ -144,7 +154,7 @@
         <span class="food_icon">🍕</span>
 
         <div>
-          <strong>Pro / month</strong>
+          <strong>Pro / Month</strong>
           <small>About the price of a pizza</small>
         </div>
 
@@ -153,7 +163,7 @@
     </div>
 
 
-    <!-- COMPARISON TABLE -->
+    <!-- PRICING TABLE -->
 
     <div class="pricing_table_wrap">
 
@@ -166,9 +176,17 @@
             <th>Features</th>
 
             <th>
-              🍔 Basic
-              <div class="table_price">/ month</div>
+
+              <span class="plan_emoji">🍔</span>
+
+              Basic
+
+              <div class="table_price">
+                / Month
+              </div>
+
             </th>
+
 
             <th class="pro_heading">
 
@@ -176,10 +194,12 @@
                 RECOMMENDED
               </div>
 
-              🍕 Pro
+              <span class="plan_emoji">🍕</span>
+
+              Pro
 
               <div class="table_price">
-                / month
+                / Month
               </div>
 
             </th>
@@ -192,42 +212,71 @@
         <tbody>
 
           <tr>
+
             <td>Website Published</td>
+
             <td>✓</td>
+
             <td>✓</td>
+
           </tr>
 
+
           <tr>
+
             <td>Hosting</td>
+
             <td>✓</td>
+
             <td>✓</td>
+
           </tr>
 
+
           <tr>
+
             <td>Subdomain</td>
+
             <td>✓</td>
+
             <td>✓</td>
+
           </tr>
 
+
           <tr>
+
             <td>Website Maintenance</td>
+
             <td>✕</td>
+
             <td>✓</td>
+
           </tr>
+
+
+          <!-- UPDATE ROW -->
 
           <tr class="update_row">
 
             <td>Website Updates</td>
 
             <td>
-              <strong>☕ / update</strong>
+
+              <strong>☕ / Update</strong>
+
             </td>
 
             <td>
-              <strong class="free_text">FREE</strong>
+
+              <strong class="free_text">
+                FREE
+              </strong>
+
             </td>
 
           </tr>
+
 
           <tr>
 
@@ -240,11 +289,12 @@
           </tr>
 
 
-          <!-- CHOOSE PLAN -->
+          <!-- ORDER BUTTONS -->
 
           <tr class="order_row">
 
             <td>Choose Plan</td>
+
 
             <td>
 
@@ -282,7 +332,7 @@
     </div>
 
 
-    <!-- WHY SO CHEAP -->
+    <!-- WHY AFFORDABLE -->
 
     <div class="cheap_button_area">
 
@@ -301,7 +351,8 @@
     <p class="pricing_bottom_note">
 
       🍔 Basic is ideal for a simple published website.
-      🍕 Pro is designed for customers who want continued care.
+      🍕 Pro is for customers who want continued maintenance,
+      updates and support.
 
     </p>
 
@@ -332,7 +383,9 @@
     <h2>Place Your Order</h2>
 
     <p class="order_intro">
-      Tell us a little about yourself and the plan you want.
+
+      Tell us about yourself and choose the plan you want.
+
     </p>
 
 
@@ -341,7 +394,9 @@
 
       <!-- NAME -->
 
-      <label>Your Name</label>
+      <label for="orderName">
+        Your Name
+      </label>
 
       <input
         type="text"
@@ -352,7 +407,9 @@
 
       <!-- EMAIL -->
 
-      <label>Email Address</label>
+      <label for="orderEmail">
+        Email Address
+      </label>
 
       <input
         type="email"
@@ -363,7 +420,9 @@
 
       <!-- MOBILE -->
 
-      <label>Mobile Number</label>
+      <label>
+        Mobile Number
+      </label>
 
       <div class="phone_box">
 
@@ -399,7 +458,9 @@
 
       <!-- COUNTRY -->
 
-      <label>Country</label>
+      <label for="orderCountry">
+        Country
+      </label>
 
       <input
         type="text"
@@ -410,17 +471,24 @@
 
       <!-- PLAN -->
 
-      <label>Selected Plan</label>
+      <label for="orderPlan">
+        Selected Plan
+      </label>
 
       <select id="orderPlan" required>
 
-        <option value="Basic">🍔 Basic / month</option>
-        <option value="Pro">🍕 Pro / month</option>
+        <option value="Basic">
+          🍔 Basic / Month
+        </option>
+
+        <option value="Pro">
+          🍕 Pro / Month
+        </option>
 
       </select>
 
 
-      <!-- BUTTON -->
+      <!-- SEND -->
 
       <button
         type="submit"
@@ -439,7 +507,7 @@
 
 
 <!-- =========================================================
-     WHY CHEAP POPUP
+     WHY AFFORDABLE POPUP
 ========================================================= -->
 
 <div id="cheapModal" class="order_modal">
@@ -456,47 +524,62 @@
     </button>
 
 
-    <h2>💡 Why is it so affordable?</h2>
+    <h2>
+      💡 Why is it so affordable?
+    </h2>
 
 
     <p>
-      NosiWeb is built around simple, practical websites rather than
+      NosiWeb focuses on simple, useful websites instead of
       expensive agency packages.
     </p>
 
 
     <div class="why_item">
+
       <strong>🎓 Student-built</strong>
+
       <span>
-        I keep my work simple and use it to build experience
-        while supporting my studies.
+        I am building practical experience while supporting
+        my studies through my work.
       </span>
+
     </div>
 
 
     <div class="why_item">
+
       <strong>🌱 Small & Independent</strong>
+
       <span>
-        There is no large office or expensive team behind the service.
+        There is no large office or expensive team behind
+        the service.
       </span>
+
     </div>
 
 
     <div class="why_item">
+
       <strong>⚙️ Simple Websites</strong>
+
       <span>
         The plans focus on useful websites without unnecessary
         features and high agency costs.
       </span>
+
     </div>
 
 
     <div class="why_item">
+
       <strong>🤝 Fair Pricing</strong>
+
       <span>
-        The goal is to make having a website easier and more
-        affordable for individuals and small businesses.
+        The goal is to make websites more accessible to
+        individuals and small businesses.
       </span>
+
     </div>
 
 
@@ -525,7 +608,9 @@
 
     <div class="inquiry_box">
 
-      <h2>Have a Question?</h2>
+      <h2>
+        Have a Question?
+      </h2>
 
       <p>
         Not ready to order? Send an inquiry and tell us what you need.
@@ -542,7 +627,9 @@
 
           <div>
 
-            <label>Your Name</label>
+            <label for="inqName">
+              Your Name
+            </label>
 
             <input
               type="text"
@@ -557,7 +644,9 @@
 
           <div>
 
-            <label>Country</label>
+            <label for="inqCountry">
+              Country
+            </label>
 
             <input
               type="text"
@@ -572,13 +661,23 @@
 
           <div>
 
-            <label>Interested Plan</label>
+            <label for="inqPlan">
+              Interested Plan
+            </label>
 
             <select id="inqPlan">
 
-              <option value="Not decided">Not decided</option>
-              <option value="Basic">🍔 Basic</option>
-              <option value="Pro">🍕 Pro</option>
+              <option value="Not decided">
+                Not decided
+              </option>
+
+              <option value="Basic">
+                🍔 Basic
+              </option>
+
+              <option value="Pro">
+                🍕 Pro
+              </option>
 
             </select>
 
@@ -589,12 +688,14 @@
 
           <div>
 
-            <label>Email</label>
+            <label for="inqEmail">
+              Email
+            </label>
 
             <input
               type="email"
               id="inqEmail"
-              placeholder="you@example.com"
+              placeholder="youremail@mail.com"
               required>
 
           </div>
@@ -602,9 +703,11 @@
 
           <!-- MOBILE -->
 
-          <div class="inquiry_phone">
+          <div>
 
-            <label>Mobile Number</label>
+            <label>
+              Mobile Number
+            </label>
 
             <div class="phone_box">
 
@@ -621,8 +724,11 @@
                 <option value="+31">🇳🇱 +31</option>
                 <option value="+81">🇯🇵 +81</option>
                 <option value="+82">🇰🇷 +82</option>
+                <option value="+65">🇸🇬 +65</option>
+                <option value="+971">🇦🇪 +971</option>
 
               </select>
+
 
               <input
                 type="tel"
@@ -639,11 +745,13 @@
 
           <div class="comment_box">
 
-            <label>Your Message</label>
+            <label for="inqComment">
+              Your Message
+            </label>
 
             <textarea
               id="inqComment"
-              rows="4"
+              rows="5"
               placeholder="Tell us what you would like to know..."
               required></textarea>
 
@@ -677,7 +785,10 @@
 
 <style>
 
+/* PRICING */
+
 .pricing_section {
+  margin-top: 30px;
   padding: 70px 20px;
   background: #f7f7f7;
 }
@@ -692,6 +803,13 @@
 .pricing_text {
   text-align: center;
   color: #666;
+  margin-bottom: 8px;
+}
+
+.pricing_comparison {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
   margin-bottom: 30px;
 }
 
@@ -702,12 +820,17 @@
   max-width: 700px;
   margin: 0 auto 30px;
   padding: 18px 25px;
+
   display: flex;
   align-items: center;
+
   gap: 18px;
+
   background: #fff;
+
   border: 2px solid #ff8a00;
   border-radius: 14px;
+
   box-shadow: 0 6px 20px rgba(0,0,0,0.07);
 }
 
@@ -716,7 +839,7 @@
 }
 
 .free_offer h3 {
-  margin: 0 0 4px;
+  margin: 0 0 5px;
   font-size: 21px;
   color: #ff8a00;
 }
@@ -728,23 +851,31 @@
 }
 
 
-/* FOOD PRICE */
+/* BURGER / PIZZA */
 
 .price_intro {
   display: flex;
   justify-content: center;
+
   gap: 25px;
+
   margin-bottom: 35px;
+
   flex-wrap: wrap;
 }
 
 .food_price {
   display: flex;
   align-items: center;
+
   gap: 12px;
+
   background: #fff;
+
   padding: 12px 22px;
+
   border-radius: 30px;
+
   box-shadow: 0 5px 15px rgba(0,0,0,0.07);
 }
 
@@ -769,23 +900,31 @@
 .pricing_table_wrap {
   max-width: 900px;
   margin: auto;
+
   overflow-x: auto;
 }
 
 .pricing_table {
   width: 100%;
+
   border-collapse: separate;
   border-spacing: 0;
+
   background: #fff;
+
   border-radius: 15px;
+
   overflow: hidden;
+
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
 .pricing_table th,
 .pricing_table td {
   padding: 17px 20px;
+
   text-align: center;
+
   border-bottom: 1px solid #eee;
 }
 
@@ -796,7 +935,12 @@
 
 .pricing_table thead th {
   background: #f3f3f3;
+
   font-size: 18px;
+}
+
+.plan_emoji {
+  font-size: 22px;
 }
 
 .pro_heading {
@@ -805,7 +949,9 @@
 
 .table_price {
   margin-top: 5px;
+
   color: #ff8a00;
+
   font-size: 13px;
 }
 
@@ -813,13 +959,22 @@
 /* RECOMMENDED */
 
 .recommended {
-  display: inline-block;
-  margin-bottom: 6px;
+  display: block;
+
+  width: fit-content;
+
+  margin: 0 auto 6px;
+
   padding: 4px 10px;
+
   background: #ff8a00;
+
   color: #fff;
+
   border-radius: 15px;
+
   font-size: 9px;
+
   font-weight: 700;
 }
 
@@ -835,29 +990,38 @@
 }
 
 
-/* BUTTON */
+/* BUTTONS */
 
 .choose_button,
 .send_order_button,
 .inquiry_button,
 .why_button {
   border: none;
+
   cursor: pointer;
+
   font-family: inherit;
 }
 
 .choose_button {
   display: inline-block;
+
   padding: 10px 20px;
+
   background: #ff8a00;
+
   color: #fff;
+
   border-radius: 25px;
+
   font-weight: 600;
+
   font-size: 13px;
 }
 
 .choose_button:hover {
   background: #e87900;
+
   color: #fff;
 }
 
@@ -866,14 +1030,19 @@
 
 .cheap_button_area {
   text-align: center;
+
   margin-top: 30px;
 }
 
 .why_button {
   padding: 11px 22px;
+
   border-radius: 25px;
+
   background: #222;
+
   color: #fff;
+
   font-size: 13px;
 }
 
@@ -882,57 +1051,87 @@
 }
 
 
-/* BOTTOM */
+/* BOTTOM TEXT */
 
 .pricing_bottom_note {
   text-align: center;
+
   margin: 25px auto 0;
+
   max-width: 700px;
+
   color: #777;
+
   font-size: 14px;
 }
 
 
-/* MODAL */
+/* =========================================================
+   POPUP
+========================================================= */
 
 .order_modal {
+
   display: none;
+
   position: fixed;
-  z-index: 9999;
+
+  z-index: 99999;
+
   inset: 0;
+
   background: rgba(0,0,0,0.65);
+
   padding: 20px;
+
   overflow-y: auto;
 }
 
 .order_box {
+
   position: relative;
+
   max-width: 560px;
+
   margin: 40px auto;
+
   padding: 35px;
+
   background: #fff;
+
   border-radius: 16px;
+
   box-shadow: 0 15px 50px rgba(0,0,0,0.25);
 }
 
 .order_box h2 {
   margin-bottom: 8px;
+
   font-size: 28px;
 }
 
 .order_intro {
   color: #777;
+
   margin-bottom: 25px;
 }
 
 .close_modal {
+
   position: absolute;
-  top: 12px;
-  right: 16px;
+
+  top: 10px;
+
+  right: 15px;
+
   border: none;
+
   background: none;
+
   font-size: 30px;
+
   cursor: pointer;
+
   color: #777;
 }
 
@@ -941,9 +1140,13 @@
 
 .order_box label,
 .inquiry_box label {
+
   display: block;
+
   margin: 14px 0 6px;
+
   font-size: 13px;
+
   font-weight: 600;
 }
 
@@ -952,12 +1155,19 @@
 .inquiry_box input,
 .inquiry_box select,
 .inquiry_box textarea {
+
   width: 100%;
+
   padding: 11px 13px;
+
   border: 1px solid #ddd;
+
   border-radius: 8px;
+
   outline: none;
+
   font-family: inherit;
+
   box-sizing: border-box;
 }
 
@@ -966,6 +1176,7 @@
 .inquiry_box input:focus,
 .inquiry_box select:focus,
 .inquiry_box textarea:focus {
+
   border-color: #ff8a00;
 }
 
@@ -973,16 +1184,21 @@
 /* PHONE */
 
 .phone_box {
+
   display: flex;
+
   gap: 8px;
 }
 
 .phone_box select {
+
   width: 105px;
+
   flex-shrink: 0;
 }
 
 .phone_box input {
+
   flex: 1;
 }
 
@@ -990,16 +1206,24 @@
 /* SEND ORDER */
 
 .send_order_button {
+
   width: 100%;
+
   margin-top: 25px;
+
   padding: 13px;
+
   border-radius: 25px;
+
   background: #ff8a00;
+
   color: #fff;
+
   font-weight: 700;
 }
 
 .send_order_button:hover {
+
   background: #e87900;
 }
 
@@ -1011,119 +1235,180 @@
 }
 
 .why_item {
+
   padding: 15px 0;
+
   border-bottom: 1px solid #eee;
 }
 
 .why_item strong {
+
   display: block;
+
   margin-bottom: 5px;
 }
 
 .why_item span {
+
   display: block;
+
   color: #666;
+
   font-size: 14px;
+
+  line-height: 1.6;
 }
 
 
-/* INQUIRY */
+/* =========================================================
+   INQUIRY
+========================================================= */
 
 .inquiry_section {
+
+  margin-top: 35px;
+
   padding: 70px 20px;
+
   background: #fff;
 }
 
 .inquiry_box {
+
   max-width: 850px;
+
   margin: auto;
+
   padding: 35px;
+
   background: #f7f7f7;
+
   border-radius: 16px;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
 .inquiry_box h2 {
+
   text-align: center;
+
   margin-bottom: 8px;
 }
 
 .inquiry_box > p {
+
   text-align: center;
+
   color: #777;
+
   margin-bottom: 30px;
 }
 
 .inquiry_grid {
+
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+
   gap: 5px 20px;
 }
 
 .comment_box {
+
   grid-column: 1 / -1;
 }
 
 .inquiry_button {
+
   display: block;
+
   margin: 25px auto 0;
+
   padding: 12px 28px;
+
   border-radius: 25px;
+
   background: #ff8a00;
+
   color: #fff;
+
   font-weight: 700;
 }
 
 .inquiry_button:hover {
+
   background: #e87900;
 }
 
 
-/* MOBILE */
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 650px) {
 
   .pricing_section {
+
+    margin-top: 20px;
+
     padding: 50px 10px;
   }
 
   .pricing_title {
+
     font-size: 30px;
   }
 
   .free_offer {
+
     padding: 15px;
   }
 
   .pricing_table th,
   .pricing_table td {
+
     padding: 13px 10px;
+
     font-size: 13px;
   }
 
   .pricing_table th {
+
     font-size: 15px;
   }
 
   .order_box {
+
     margin: 20px auto;
+
     padding: 25px 20px;
   }
 
   .inquiry_box {
+
     padding: 25px 18px;
   }
 
   .inquiry_grid {
+
     grid-template-columns: 1fr;
   }
 
   .comment_box {
+
     grid-column: auto;
   }
 
   .food_price {
+
     width: 100%;
+
     justify-content: center;
+  }
+
+  .phone_box select {
+
+    width: 95px;
   }
 
 }
@@ -1138,20 +1423,26 @@
 
 <script>
 
-/* YOUR RECEIVING EMAIL */
+/* =========================================================
+   YOUR RECEIVING EMAIL
+========================================================= */
 
-const businessEmail = "nosibul6294@gmail.com";
+const businessEmail = "nosibul6294@example.com";
 
 
-/* ===============================
+/* =========================================================
    ORDER POPUP
-================================ */
+========================================================= */
 
 function openOrder(plan) {
 
-  document.getElementById("orderPlan").value = plan;
+  const modal = document.getElementById("orderModal");
 
-  document.getElementById("orderModal").style.display = "block";
+  const selectedPlan = document.getElementById("orderPlan");
+
+  selectedPlan.value = plan;
+
+  modal.style.display = "block";
 
   document.body.style.overflow = "hidden";
 
@@ -1160,20 +1451,24 @@ function openOrder(plan) {
 
 function closeOrder() {
 
-  document.getElementById("orderModal").style.display = "none";
+  const modal = document.getElementById("orderModal");
+
+  modal.style.display = "none";
 
   document.body.style.overflow = "";
 
 }
 
 
-/* ===============================
-   WHY CHEAP POPUP
-================================ */
+/* =========================================================
+   WHY AFFORDABLE POPUP
+========================================================= */
 
 function openCheap() {
 
-  document.getElementById("cheapModal").style.display = "block";
+  const modal = document.getElementById("cheapModal");
+
+  modal.style.display = "block";
 
   document.body.style.overflow = "hidden";
 
@@ -1182,133 +1477,19 @@ function openCheap() {
 
 function closeCheap() {
 
-  document.getElementById("cheapModal").style.display = "none";
+  const modal = document.getElementById("cheapModal");
+
+  modal.style.display = "none";
 
   document.body.style.overflow = "";
 
 }
 
 
-/* ===============================
-   CLOSE WHEN CLICKING OUTSIDE
-================================ */
-
-window.addEventListener("click", function(event) {
-
-  if (event.target === document.getElementById("orderModal")) {
-
-    closeOrder();
-
-  }
-
-  if (event.target === document.getElementById("cheapModal")) {
-
-    closeCheap();
-
-  }
-
-});
 
 
-/* ===============================
-   ORDER EMAIL
-================================ */
 
-document.getElementById("orderForm").addEventListener("submit", function(event) {
-
-  event.preventDefault();
-
-
-  const name =
-    document.getElementById("orderName").value.trim();
-
-  const email =
-    document.getElementById("orderEmail").value.trim();
-
-  const code =
-    document.getElementById("orderCode").value;
-
-  const phone =
-    document.getElementById("orderPhone").value.trim();
-
-  const country =
-    document.getElementById("orderCountry").value.trim();
-
-  const plan =
-    document.getElementById("orderPlan").value;
-
-
-  const subject =
-    "Website Plan Order Request";
-
-
-  const body =
-`Hello NosiWeb,
-
-I would like to order a website plan.
-
-Order Details
--------------------------
-Name: ${name}
-Email: ${email}
-Mobile: ${code} ${phone}
-Country: ${country}
-Selected Plan: ${plan}
-
-I understand that the first month is currently free for new customers.
-
-Please contact me with the next steps.
-
-Thank you,
-${name}`;
-
-
-  const mailto =
-    "mailto:" + businessEmail +
-    "?subject=" + encodeURIComponent(subject) +
-    "&body=" + encodeURIComponent(body);
-
-
-  window.location.href = mailto;
-
-});
-
-
-/* ===============================
-   INQUIRY EMAIL
-================================ */
-
-document.getElementById("inquiryForm").addEventListener("submit", function(event) {
-
-  event.preventDefault();
-
-
-  const name =
-    document.getElementById("inqName").value.trim();
-
-  const country =
-    document.getElementById("inqCountry").value.trim();
-
-  const plan =
-    document.getElementById("inqPlan").value;
-
-  const email =
-    document.getElementById("inqEmail").value.trim();
-
-  const code =
-    document.getElementById("inqCode").value;
-
-  const phone =
-    document.getElementById("inqPhone").value.trim();
-
-  const comment =
-    document.getElementById("inqComment").value.trim();
-
-
-  const subject =
-    "Website Service Inquiry
     
-
     <!--footer section start -->
     <div class="footer_section layout_padding">
 
