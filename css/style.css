@@ -896,3 +896,6 @@ button {
 .margin_top_90{
   margin-top: 90px;
 }
+.footer_section {
+    margin-top: 30px !important;
+}
