@@ -364,6 +364,13 @@
 <!-- javascript -->
 
 <script src="js/owl.carousel.js"></script>
+      <script>
+document.querySelectorAll('#navbarSupportedContent .nav-link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    $('#navbarSupportedContent').collapse('hide');
+  });
+});
+      </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
